@@ -1,0 +1,9 @@
+For keep scripts included you need to not modify this line in HTML file:
+
+<script src="scripts/index.js">
+
+If you need to load some script, you can do it like other scripts in /scripts/index.js:
+
+1) Create randomname.js in /scripts folder and put code of script
+2) Put line loadScript('scripts/randomname.js') into file /scripts/index.js:
+

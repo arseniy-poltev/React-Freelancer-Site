@@ -1,0 +1,2726 @@
+/*! CSS Used from: https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css */
+
+@font-face {
+    font-family: Lato;
+    src: url("./Fonts/Lato/Lato-Bold.ttf");
+    font-weight: bold;
+}@font-face {
+    font-family: Lato;
+    src: url("./Fonts/Lato/Lato-Black.ttf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: Lato;
+    src: url("./Fonts/Lato/Lato-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: Lato;
+    src: url("./Fonts/Lato/Lato-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("./Fonts/Open_Sans/OpenSans-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: OpenSans;
+    src: url("./Fonts/Open_Sans/OpenSans-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url("./Fonts/MYRIADPRO/MYRIADPRO-BOLD.OTF");
+    font-weight: bold;
+}@font-face {
+    font-family: Myriad Pro;
+    src: url("./Fonts/MYRIADPRO/MYRIADPRO-REGULAR.OTF");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Raleway - Black';
+    src: url("./Fonts/Raleway-Black.ttf");
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+/*! CSS Used from: https://dev.gohirenow.com/vendors~main.e833c992d905de012df3.css */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul ul {
+    margin-bottom: 0;
+}
+
+b {
+    font-weight: bolder;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+button {
+    border-radius: 0;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+button, input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button {
+    text-transform: none;
+}
+
+button {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-12, .col-2, .col-4, .col-6, .col-md-2, .col-md-3, .col-md-7, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .col-sm-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .col-sm-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-md-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
+
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+.btn:disabled {
+    opacity: .65;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.flex-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+}
+
+.flex-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+.justify-content-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+.align-items-end {
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mt-2 {
+    margin-top: .5rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.ml-3 {
+    margin-left: 1rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mr-4 {
+    margin-right: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.ml-4 {
+    margin-left: 1.5rem !important;
+}
+
+.m-5 {
+    margin: 3rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pt-3 {
+    padding-top: 1rem !important;
+}
+
+.pb-3 {
+    padding-bottom: 1rem !important;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.pt-4 {
+    padding-top: 1.5rem !important;
+}
+
+.pb-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.pl-4 {
+    padding-left: 1.5rem !important;
+}
+
+.p-5 {
+    padding: 3rem !important;
+}
+
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 3rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+@media print {
+    *, ::after, ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+
+    img {
+        page-break-inside: avoid;
+    }
+
+    h2, h3, p {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2, h3 {
+        page-break-after: avoid;
+    }
+
+    body {
+        min-width: 992px !important;
+    }
+
+    .container {
+        min-width: 992px !important;
+    }
+}
+
+/*! CSS Used from: https://dev.gohirenow.com/main.e833c992d905de012df3.css */
+img {
+    object-fit: contain;
+}
+
+.row.extra-margin-imp {
+    margin-right: 4% !important;
+    margin-left: 4% !important;
+}
+
+* {
+    outline: none;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header span {
+    font-size: 16.746px;
+    letter-spacing: 0;
+    color: rgb(88, 89, 91);
+    font-weight: bold;
+    line-height: 1.2;
+    position: relative;
+}
+
+.header span a:hover {
+    color: #448CCB !important;
+}
+
+.header span a {
+    color: rgb(88, 89, 91);
+    text-decoration: none;
+}
+
+.trusted-company {
+    width: 120px;
+    height: 100%;
+    padding: 3% 2% 3% 2%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+}
+
+.text-orange {
+    color: #ED7B18 !important;
+}
+
+.header span.text-uppercase:nth-child(2) {
+    margin-left: 20px;
+}
+
+.auth-links span:first-child {
+    border-right: 2px solid #77C9ED;
+    padding-right: 20px;
+}
+
+.job-post button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.job-post button {
+    background-color: rgb(237, 123, 24);
+    font-size: 12.746px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    border-radius: 35px;
+    padding: 9px 23px;
+    outline: hidden;
+}
+
+.second-two .smalltext p {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: lato, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.652;
+    margin: 25px 0;
+    padding-left: 0;
+}
+
+.second-two .largetext h2 {
+    font-size: 44.366px;
+    font-family: lato, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.hire-want-section {
+    background-image: url(https://dev.gohirenow.com/images/19f208a9315fd11ef3635aeaaae4a942.PNG);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 552px;
+}
+
+.second-two {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.second-two .hire-work-buttons button {
+    font-size: 19.183px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: rgb(237, 123, 24);
+    border-radius: 100px;
+    padding: 19px 34px;
+}
+
+.black-back {
+    padding: 60px 50px;
+    background-color: #333333;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.black-back h2 {
+    margin-bottom: 0;
+    font-size: 36px;
+    font-family: lato;
+    font-weight: 800;
+    color: #ed7b18;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.post-a-job-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+.post-a-job-btn button {
+    background-color: rgb(237, 123, 24);
+    font-size: 15px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 15px 64px;
+}
+
+.post-a-job-btn button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.why-gohirenow {
+    margin-top: 2%;
+    background-image: url(https://dev.gohirenow.com/images/bbb31472da20106f4fe2e504567419aa.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 3%;
+}
+
+.why-gohirenow .inner-div {
+    box-shadow: -10px 0px 50px -19px rgba(107, 97, 107, 0.87);
+    padding: 7% 7% 0 7%;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.why-gohirenow .inner-div > .row > .col-6 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gohire-why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.gohire-why h2 {
+    font-size: 36px;
+    font-family: lato;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+}
+
+.black-ovals:first-child {
+    margin-top: 4%;
+}
+
+.black-ovals {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8%;
+    justify-content: center;
+}
+
+.black-ovalwhy {
+    width: 75px;
+    height: 75px;
+    margin-right: 8%;
+}
+
+.oval-paragraph p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.oval-paragraph {
+    width: 70%;
+}
+
+.gohire-why p {
+    margin-top: 2%;
+    font-size: 15px;
+    font-family: lato;
+    color: rgb(51, 51, 51);
+    line-height: 1.652;
+}
+
+.post-a-job {
+    background-color: #5D9BD2 !important;
+    font-size: 15px !important;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold !important;
+    border-radius: 50px !important;
+    padding: 15px 64px !important;
+}
+
+.trust-comp {
+    background-color: #333333;
+    padding: 7% 5%;
+}
+
+.trust-comp > p {
+    font-size: 15px;
+    margin-top: 2%;
+    font-family: lato;
+    line-height: 1.652;
+}
+
+.white-ovals {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 3% 0 3% 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.many-ovals {
+    margin-top: 7% !important;
+}
+
+.orange-oval {
+    background-color: #ED7B18;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.blue-ovals {
+    background-color: #448CCB !important;
+}
+
+.quotes h2 {
+    font-size: 36px;
+    font-family: lato;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+}
+
+.save-a-lot {
+    padding: 7% 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+}
+
+.save-a-lot .header h1 {
+    font-size: 22px;
+    font-family: "Myriad Pro";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 30px 0;
+}
+
+.save-a-lot .para p {
+    font-size: 18px;
+    font-family: "OpenSans";
+    color: rgb(0, 0, 0);
+    line-height: 1.652;
+    text-align: center;
+    padding: 10px;
+}
+
+.save-a-lot .author h1 {
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: #448CCB;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 0 30px 0;
+}
+
+.save-a-lot-item {
+    justify-items: center;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+}
+
+.cont-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cont-center hr {
+    height: 1px;
+    width: 50%;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer-icon {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.footer-icon i {
+    background-color: #448CCB;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #333333;
+}
+
+.footer-icon i:hover {
+    color: white;
+}
+
+.footer-icon .fa-twitter, .footer-icon .fa-instagram {
+    padding: 10px 12px;
+}
+
+.get-a-quote {
+    font-family: "Myriad Pro";
+    background-color: #ED7B18 !important;
+    font-size: 15px !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold !important;
+    border: 2px solid white !important;
+    border-radius: 50px !important;
+    padding: 15px 64px !important;
+}
+
+.info-div {
+    background-color: #448CCB;
+    display: flex;
+    padding: 70px 0;
+}
+
+.info-div .content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-div .img-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.info-div .btn-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-div .content-div h1 {
+    font-size: 38px;
+    font-family: lato;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.info-div .content-div p {
+    font-size: 17px;
+    font-family: lato;
+    color: rgb(255, 255, 255);
+    line-height: 1.652;
+    font-weight: normal;
+}
+
+.footer {
+    background-image: url(https://dev.gohirenow.com/images/14d8626b79aff6b74958ec7e96b855ad.png);
+    background-position: 100% 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+.footer-logining {
+    background-color: white;
+}
+
+.footer-mid {
+    padding: 81px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-anchors {
+    padding: 15px 0;
+}
+
+.footer-anchors > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-anchors > div p, .footer-anchors > div a {
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.footer-anchors > div a:hover {
+    color: #448ccb;
+}
+
+.footer-bottom {
+    padding: 40px;
+}
+
+.footer-bottom .cont-center p {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.9;
+}
+
+.mobile-menu {
+    display: none !important;
+    justify-content: space-between;
+}
+
+.black-circle-adj {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 68%;
+}
+
+.black-circle-adj > div {
+    padding: 30px;
+}
+
+.black-circle-adj > div img {
+    width: 100%;
+}
+
+.black-circle-adj > div img.bottom-fixed {
+    margin-bottom: -10%;
+}
+
+.voted-div-outer {
+    padding: 30px 0% 30px 30px;
+}
+
+.voted-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 4px;
+}
+
+.voted-div .top {
+    border: 5px solid white;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.voted-div .top h4 {
+    margin-bottom: 0;
+    font-size: 50.986px;
+    font-family: lato;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: left;
+    font-weight: bold;
+}
+
+.voted-div .top p {
+    margin-bottom: 0;
+    font-size: 15.085px;
+    font-family: lato;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: left;
+    font-weight: bold;
+}
+
+.voted-div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.voted-div > div > p {
+    font-size: 17.085px;
+    font-family: lato;
+    color: rgb(235, 235, 235);
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: -9px;
+}
+
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    top: 5px;
+    left: 10px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.round-borders {
+    margin: 0 0 0 7px !important;
+    position: absolute !important;
+    height: 35px !important;
+    width: 35px !important;
+    background: #ED7B18;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+}
+
+#menuToggle span {
+    display: flex;
+    width: 20px;
+    height: 4px;
+    margin-bottom: 3px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+    margin-bottom: 0px;
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(5px, 5.5px);
+    background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(3px, 3px);
+}
+
+#menu {
+    position: absolute;
+    width: 250px;
+    left: -20px;
+    top: 9.5vh;
+    padding: 5px 0 5px 20px;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    list-style: none;
+    z-index: 100000;
+    background-color: rgb(244, 246, 248);
+}
+
+#menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#menu li {
+    padding: 10px 0;
+    transition-delay: 2s;
+}
+
+#menu li > a {
+    font-family: "Myriad Pro";
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgb(64, 64, 64);
+}
+
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.container {
+    padding: 0px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.navigationbar {
+    padding-right: 0px !important;
+}
+
+body {
+    padding: 0px !important;
+}
+
+.new-template-button {
+    font-size: 19.183px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: rgb(237, 123, 24);
+    border-radius: 100px;
+    padding: 19px 62px;
+    border: 0px solid transparent;
+}
+
+.blue-banner {
+    background-image: url(https://dev.gohirenow.com/images/0e44d20cdcdd3e59d5c021ce114611d1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.new-home1 {
+    background-image: url(https://dev.gohirenow.com/images/a57f683155b68b822bdd9dd7e29fce8c.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    background-size: cover;
+}
+
+.size-font-psd {
+    font-size: 23px;
+    font-family: "Myriad Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.652;
+    text-align: center;
+    -moz-transform: matrix(1, 0, 0, 1.00020828141129, 0, 0);
+    -webkit-transform: matrix(1, 0, 0, 1.00020828141129, 0, 0);
+    -ms-transform: matrix(1, 0, 0, 1.00020828141129, 0, 0);
+}
+
+button {
+    outline: none;
+}
+
+.fun-fact {
+    padding: 41px 60px !important;
+}
+
+.fun-fact h1 {
+    font-size: 35.366px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    -moz-transform: matrix(1.12340475331057, 0, 0, 1.1272188568286, 0, 0);
+    -webkit-transform: matrix(1.12340475331057, 0, 0, 1.1272188568286, 0, 0);
+    -ms-transform: matrix(1.12340475331057, 0, 0, 1.1272188568286, 0, 0);
+}
+
+.fun-fact p {
+    font-size: 19px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.652;
+    text-align: center;
+    -moz-transform: matrix(1, 0, 0, 1.00020828141129, 0, 0);
+    -webkit-transform: matrix(1, 0, 0, 1.00020828141129, 0, 0);
+    -ms-transform: matrix(1, 0, 0, 1.00020828141129, 0, 0);
+}
+
+.mota-border .skills {
+    font-size: 17.996px;
+    font-family: "OpenSans";
+    color: rgb(237, 123, 24);
+    line-height: 1.278;
+    text-align: center;
+    -moz-transform: matrix(1, 0, 0, 1.00023644289131, 0, 0);
+    -webkit-transform: matrix(1, 0, 0, 1.00023644289131, 0, 0);
+    -ms-transform: matrix(1, 0, 0, 1.00023644289131, 0, 0);
+}
+
+.mota-border {
+    border: 10px solid #EBEBEB;
+    padding-bottom: 11% !important;
+}
+
+.mota-border img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 82px;
+    height: 82px;
+}
+
+.img-intro .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+}
+
+.dots div {
+    background-color: #EBEBEB;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.big-new-home-chck {
+    font-size: 23px;
+    font-family: "OpenSans";
+    color: rgb(0, 0, 0);
+    line-height: 1.652;
+    text-align: center;
+    -moz-transform: matrix(1, 0, 0, 1.00023644289131, 0, 0);
+    -webkit-transform: matrix(1, 0, 0, 1.00023644289131, 0, 0);
+    -ms-transform: matrix(1, 0, 0, 1.00023644289131, 0, 0);
+}
+
+@media (min-width: 20px) and (max-width: 319px) {
+    .mobile-menu {
+        padding: 0 15px 0 10px;
+        display: flex !important;
+    }
+
+    .round-borders {
+        margin: 0 0 0 9px !important;
+        position: absolute !important;
+        height: 24px !important;
+        width: 24px !important;
+        background: #ED7B18;
+        -moz-border-radius: 70px;
+        -webkit-border-radius: 70px;
+        border-radius: 70px;
+    }
+
+    #menu {
+        top: 32px;
+    }
+
+    #menuToggle span {
+        display: flex;
+        width: 12px !important;
+        height: 2px;
+        margin-bottom: 2px;
+        position: relative;
+        background: white;
+        border-radius: 2px;
+        z-index: 1;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
+
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(3px, 2.5px);
+        background: white;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(2px, 2px);
+    }
+
+    #menuToggle {
+        top: 5px;
+        left: 0;
+    }
+
+    #menuToggle input {
+        width: 20px;
+        height: 20px;
+    }
+
+    #menuToggle span {
+        width: 20px;
+        margin-bottom: 2px;
+    }
+
+    .footer-icon i {
+        font-size: 10px;
+    }
+
+    .get-a-quote {
+        font-size: 7px !important;
+        padding: 2px 12px !important;
+    }
+
+    .job-post button {
+        font-size: 5.746px;
+        padding: 4px 8px;
+    }
+
+    .footer-anchors {
+        padding: 0;
+    }
+
+    .footer-anchors > div.col-sm-3:last-child {
+        display: none;
+    }
+
+    .footer-anchors > div.col-sm-3:first-child {
+        display: none;
+    }
+
+    .footer-anchors > div {
+        margin-top: 5px;
+    }
+
+    .voted-div-outer {
+        display: none;
+    }
+
+    .hire-want-section {
+        background-position: 63% 100%;
+        margin-bottom: calc(10vw - 127px);
+    }
+
+    .second-two .hire-work-buttons button {
+        font-size: 3.8vw;
+        border-radius: 35px;
+        padding: 7px 3px;
+    }
+
+    .second-two .largetext h2 {
+        font-size: 25px;
+    }
+
+    .oval-paragraph {
+        width: 80%;
+    }
+
+    .oval-paragraph p {
+        margin: 20px 0;
+        font-size: 7px;
+    }
+
+    .trust-comp > p {
+        font-size: 6px;
+    }
+
+    .post-a-job {
+        font-size: 8px !important;
+        padding: 3px 13px !important;
+    }
+
+    .footer-anchors > div p, .footer-anchors > div a {
+        font-size: 18px;
+    }
+
+    .save-a-lot {
+        flex-wrap: wrap;
+    }
+
+    .desktop-menu {
+        display: none !important;
+    }
+
+    .second-two .hire-work-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .black-circle-adj {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .black-back {
+        padding: 45px 4px;
+    }
+
+    .black-ovals {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .orange-oval {
+        width: 40px;
+        height: 40px;
+        margin: 7px;
+    }
+
+    .save-a-lot {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto;
+    }
+
+    .save-a-lot .header h1 {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .save-a-lot .author h1 {
+        font-size: 8px;
+    }
+
+    .save-a-lot .para p {
+        font-size: 8px;
+    }
+
+    .footer {
+        padding-top: 20px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .footer .footer-mid {
+        padding: 40px 0;
+    }
+
+    .footer-bottom {
+        padding: 0 0 40px 0;
+    }
+
+    .footer-bottom .cont-center p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-icon {
+        width: 75%;
+    }
+
+    .black-back h2 {
+        margin-bottom: 13px;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .quotes h2 {
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .post-a-job-btn button {
+        font-size: 8px;
+        padding: 8px 14px;
+    }
+
+    .info-div {
+        padding: 10px;
+        height: 300px;
+    }
+
+    .info-div .img-div {
+        justify-content: center;
+    }
+
+    .info-div .img-div img {
+        width: 30%;
+    }
+
+    .info-div .content-div h1 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .info-div .content-div p {
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .info-div .btn-div {
+        justify-content: center;
+    }
+
+    .why-gohirenow .inner-div {
+        box-shadow: none;
+        border-radius: unset;
+        padding: 7% 15px 0 0;
+    }
+
+    .why-gohirenow .inner-div > .row > .col-6 {
+        padding: 0;
+    }
+
+    .gohire-why h2 {
+        font-size: 10px;
+    }
+
+    .trusted-company {
+        width: 120px;
+        height: 100%;
+        padding: 3% 4% 3% 4%;
+    }
+
+    .why-gohirenow > .container {
+        padding: 0;
+        padding-top: 0 !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .mobile-menu {
+        padding: 0 15px 0 10px;
+        display: flex !important;
+    }
+
+    .round-borders {
+        margin: 0 0 0 9px !important;
+        position: absolute !important;
+        height: 24px !important;
+        width: 24px !important;
+        background: #ED7B18;
+        -moz-border-radius: 70px;
+        -webkit-border-radius: 70px;
+        border-radius: 70px;
+    }
+
+    #menu {
+        top: 33px;
+    }
+
+    #menuToggle span {
+        display: flex;
+        width: 12px !important;
+        height: 2px;
+        margin-bottom: 2px;
+        position: relative;
+        background: white;
+        border-radius: 2px;
+        z-index: 1;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
+
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(3px, 2.5px);
+        background: white;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(2px, 2px);
+    }
+
+    .second-two .largetext h2 {
+        width: 110%;
+    }
+
+    .job-post button {
+        font-size: 10px;
+        font-family: "Myriad Pro";
+        padding: 6px 16px;
+    }
+
+    .footer-anchors {
+        padding: 0;
+    }
+
+    .footer-anchors > div.col-sm-3:last-child {
+        display: none;
+    }
+
+    .footer-anchors > div.col-sm-3:first-child {
+        display: none;
+    }
+
+    .footer-anchors > div {
+        margin-top: 5px;
+    }
+
+    .footer {
+        padding-top: 20px;
+    }
+
+    .voted-div-outer {
+        display: none;
+    }
+
+    .hire-want-section {
+        background-position: 63% 100%;
+        margin-bottom: calc(10vw - 116px);
+    }
+
+    .second-two .hire-work-buttons button {
+        padding: 19px 14px;
+        font-size: 4vw;
+    }
+
+    .second-two .largetext h2 {
+        font-size: 25px;
+    }
+
+    .oval-paragraph {
+        width: 80%;
+    }
+
+    .oval-paragraph p {
+        margin: 20px 0;
+    }
+
+    .footer-anchors > div p, .footer-anchors > div a {
+        font-size: 18px;
+    }
+
+    .save-a-lot {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto;
+    }
+
+    .save-a-lot .header h1 {
+        padding: 0;
+    }
+
+    .desktop-menu {
+        display: none !important;
+    }
+
+    .second-two .hire-work-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .black-circle-adj {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+
+    .black-back {
+        padding: 45px 4px;
+    }
+
+    .trusted-company {
+        width: 120px;
+        height: 100%;
+        padding: 3% 4% 3% 4%;
+    }
+
+    .orange-oval {
+        width: 110px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .footer {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .footer .footer-mid {
+        padding: 40px 0;
+    }
+
+    .footer-bottom {
+        padding: 0 20px 40px 20px;
+    }
+
+    .footer-bottom .cont-center p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-icon {
+        width: 75%;
+    }
+
+    .black-back h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .quotes h2 {
+        text-align: center;
+    }
+
+    .info-div {
+        padding: 10px;
+        height: 400px;
+    }
+
+    .info-div .img-div {
+        justify-content: center;
+    }
+
+    .info-div .img-div img {
+        width: 30%;
+    }
+
+    .info-div .content-div h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .info-div .content-div p {
+        text-align: center;
+    }
+
+    .info-div .btn-div {
+        justify-content: center;
+    }
+
+    .why-gohirenow .inner-div {
+        box-shadow: none;
+        padding: 7% 15px 0 0;
+    }
+
+    .black-ovals {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .why-gohirenow .inner-div > .row > .col-6 {
+        padding: 0;
+    }
+
+    .why-gohirenow .inner-div > .row > .col-6 > .black-ovals > .oval-paragraph {
+        padding-top: 20px;
+    }
+
+    .why-gohirenow > .container {
+        padding: 0;
+        padding-top: 0 !important;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 574px) {
+    .mobile-menu {
+        padding: 0 15px 0 10px;
+        display: flex !important;
+    }
+
+    #menu {
+        top: 41px;
+    }
+
+    .hire-want-section {
+        background-position: 63% 100%;
+        margin-bottom: calc(10vw - 100px);
+    }
+
+    .footer-anchors {
+        padding: 0;
+    }
+
+    .footer-anchors > div.col-sm-3:last-child {
+        display: none;
+    }
+
+    .footer-anchors > div.col-sm-3:first-child {
+        display: none;
+    }
+
+    .footer-anchors > div {
+        margin-top: 5px;
+    }
+
+    .voted-div-outer {
+        display: none;
+    }
+
+    .second-two .hire-work-buttons button {
+        font-size: 2.5vw;
+    }
+
+    .footer-mid {
+        padding: 40px 0;
+    }
+
+    .footer-anchors > div p, .footer-anchors > div a {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .save-a-lot {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto;
+    }
+
+    .save-a-lot .header h1 {
+        padding: 0;
+    }
+
+    .desktop-menu {
+        display: none !important;
+    }
+
+    .second-two .hire-work-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .black-circle-adj {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        width: 80%;
+    }
+
+    .black-back {
+        padding: 45px 4px;
+    }
+
+    .black-ovals {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .why-gohirenow .inner-div > .row > .col-6 > .black-ovals > .oval-paragraph {
+        padding-top: 20px;
+    }
+
+    .orange-oval {
+        width: 110px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .footer {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .footer-bottom .cont-center p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-icon {
+        width: 75%;
+    }
+
+    .black-back h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .second-two .largetext h2 {
+        font-size: 35px;
+    }
+
+    .quotes h2 {
+        text-align: center;
+    }
+
+    .info-div {
+        padding: 10px;
+        height: 400px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .info-div .img-div {
+        justify-content: center;
+    }
+
+    .info-div .img-div img {
+        width: 30%;
+    }
+
+    .info-div .content-div h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .info-div .content-div p {
+        text-align: center;
+    }
+
+    .info-div .btn-div {
+        justify-content: center;
+    }
+
+    .footer {
+        padding-top: 20px;
+    }
+
+    .why-gohirenow .inner-div {
+        box-shadow: none;
+    }
+
+    .why-gohirenow > .container {
+        padding: 0;
+        padding-top: 0 !important;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 684px) {
+    .mobile-header {
+        justify-content: flex-end;
+    }
+
+    #menu {
+        top: 42px;
+        left: calc(-35px + (290px - 50vw));
+    }
+
+    .voted-div > div {
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .voted-div > div > p {
+        text-align: unset;
+        color: black;
+    }
+
+    .job-post button {
+        font-size: 8.746px;
+        padding: 7px 15px;
+    }
+
+    .second-two .hire-work-buttons button {
+        font-size: 2vw;
+    }
+
+    .voted-div-outer {
+        padding: 0;
+    }
+
+    .voted-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        margin-left: 0;
+    }
+
+    .hire-want-section .container .row {
+        flex-direction: column;
+    }
+
+    .footer-anchors > div p, .footer-anchors > div a {
+        font-size: 9px;
+    }
+
+    .save-a-lot {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto;
+    }
+
+    .save-a-lot .header h1 {
+        padding: 0;
+    }
+
+    .desktop-menu {
+        display: none !important;
+    }
+
+    .mobile-menu {
+        display: flex !important;
+    }
+
+    .second-two .hire-work-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .black-circle-adj {
+        width: 100%;
+    }
+
+    .black-circle-adj > div {
+        padding: 30px 20px;
+    }
+
+    .black-back {
+        padding: 45px 4px;
+    }
+
+    .black-ovals {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .why-gohirenow .inner-div > .row > .col-6 > .black-ovals > .oval-paragraph {
+        padding-top: 20px;
+    }
+
+    .orange-oval {
+        width: 110px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .footer {
+        background-position: right;
+        background-size: auto;
+        padding-top: 30px;
+    }
+
+    .footer-bottom .cont-center p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-icon {
+        width: 75%;
+    }
+
+    .black-back h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .quotes h2 {
+        text-align: center;
+    }
+
+    .info-div {
+        padding: 35px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-div .content-div {
+        margin: 35px 0;
+    }
+
+    .info-div .img-div {
+        justify-content: center;
+    }
+
+    .info-div .img-div img {
+        width: 75%;
+    }
+
+    .info-div .content-div h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .info-div .content-div p {
+        text-align: center;
+    }
+
+    .info-div .btn-div {
+        justify-content: center;
+    }
+
+    .why-gohirenow .inner-div {
+        box-shadow: none;
+    }
+
+    .why-gohirenow > .container {
+        padding: 0;
+        padding-top: 0 !important;
+    }
+}
+
+@media (min-width: 685px) and (max-width: 767px) {
+    .mobile-header {
+        justify-content: center;
+    }
+
+    #menu {
+        top: 42px;
+        left: calc(-35px + (290px - 50vw));
+    }
+
+    .voted-div > div {
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .voted-div > div > p {
+        text-align: unset;
+        color: black;
+    }
+
+    .second-two .hire-work-buttons button {
+        font-size: 1.5vw;
+    }
+
+    .voted-div-outer {
+        padding: 0;
+    }
+
+    .voted-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        margin-left: 0;
+    }
+
+    .hire-want-section .container .row {
+        flex-direction: column;
+    }
+
+    .footer-mid {
+        padding: 34px 0 0 0;
+    }
+
+    .footer-anchors > div p, .footer-anchors > div a {
+        margin-bottom: 0;
+        font-size: 9px;
+    }
+
+    .save-a-lot {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto;
+    }
+
+    .save-a-lot .header h1 {
+        padding: 0;
+    }
+
+    .desktop-menu {
+        display: none !important;
+    }
+
+    .mobile-menu {
+        display: flex !important;
+    }
+
+    .second-two .hire-work-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .black-circle-adj {
+        width: 100%;
+    }
+
+    .black-circle-adj > div {
+        padding: 30px 20px;
+    }
+
+    .black-back {
+        padding: 45px 4px;
+    }
+
+    .black-ovals {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .why-gohirenow .inner-div > .row > .col-6 > .black-ovals > .oval-paragraph {
+        padding-top: 20px;
+    }
+
+    .orange-oval {
+        width: 110px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .footer {
+        background-position: right;
+        background-size: auto;
+        padding-top: 30px;
+    }
+
+    .footer-bottom .cont-center p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-icon {
+        width: 75%;
+    }
+
+    .black-back h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .quotes h2 {
+        text-align: center;
+    }
+
+    .info-div {
+        padding: 35px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-div .img-div {
+        justify-content: center;
+    }
+
+    .info-div .img-div img {
+        width: 75%;
+    }
+
+    .info-div .content-div h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .info-div .content-div p {
+        text-align: center;
+    }
+
+    .info-div .btn-div {
+        justify-content: center;
+    }
+
+    .why-gohirenow .inner-div {
+        box-shadow: none;
+    }
+
+    .why-gohirenow > .container {
+        padding: 0;
+        padding-top: 0 !important;
+    }
+
+    .job-post button {
+        font-size: 8.746px;
+        padding: 7px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigationbar {
+        padding-right: 15px !important;
+    }
+
+    .voted-div > div {
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .voted-div > div > p {
+        text-align: unset;
+    }
+
+    .second-two {
+        margin-bottom: 2%;
+    }
+
+    .header span {
+        font-size: 10.746px;
+    }
+
+    .second-two .hire-work-buttons button {
+        font-size: 1.5vw;
+    }
+
+    .voted-div-outer {
+        padding: 0;
+    }
+
+    .voted-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        margin-left: 0;
+    }
+
+    .hire-want-section .container .row {
+        flex-direction: column;
+    }
+
+    .save-a-lot {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto;
+    }
+
+    .save-a-lot .header h1 {
+        padding: 0;
+    }
+
+    .orange-oval {
+        margin: 15px 8px;
+    }
+
+    .get-a-quote {
+        padding: 12px 42px !important;
+    }
+
+    .second-two .hire-work-buttons button {
+        padding: 15px 18px;
+    }
+
+    .footer {
+        background-size: cover;
+        background-position: -260px 88px;
+        padding-top: 34px;
+    }
+
+    .info-div {
+        padding: 20px 0;
+    }
+
+    .footer-mid {
+        height: 200px;
+    }
+
+    .footer-anchors > div p, .footer-anchors > div a {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .black-circle-adj {
+        width: 100%;
+    }
+
+    .black-circle-adj > div {
+        padding: 30px 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+    .info-div {
+        height: unset;
+        padding: 81px 0;
+    }
+
+    .save-a-lot .para p {
+        font-size: 16px;
+    }
+
+    .second-two .hire-work-buttons button {
+        padding: 15px 18px;
+    }
+
+    .footer-mid {
+        height: 200px;
+    }
+
+    .footer-anchors > div p, .footer-anchors > div a {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .voted-div-outer {
+        padding: 30px 95px 30px 30px;
+    }
+
+    .save-a-lot {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .save-a-lot .para p {
+        font-size: 16px;
+    }
+
+    .second-two .hire-work-buttons button {
+        padding: 15px 18px;
+    }
+
+    .footer {
+        background-position: 100% 70px;
+        padding-top: 30px;
+    }
+
+    .info-div {
+        padding: 30px 0;
+    }
+
+    .footer-mid {
+        height: 200px;
+    }
+
+    .footer-anchors > div p, .footer-anchors > div a {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 20px) and (max-width: 1024px) {
+    .hire-want-section > .container {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .why-gohirenow .inner-div {
+        padding-right: 0px !important;
+    }
+
+    .black-back h2 {
+        margin-bottom: 0 !important;
+        font-size: 36px !important;
+        font-family: lato;
+        font-weight: 800 !important;
+        color: #ed7b18 !important;
+    }
+
+    .why-virtual {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .why-virtual h1 {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+
+    .why-virtual .col-6 {
+        display: grid !important;
+        grid-template-rows: 75px auto;
+        padding: 0 !important;
+        grid-row-gap: 20px;
+    }
+
+    .why-virtual .col-6 .svg-image {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .why-virtual .pl-4 {
+        padding: 10px 10px !important;
+    }
+
+    .images-new-home {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 !important;
+    }
+
+    .images-new-home img {
+        display: grid;
+        grid-row: 2;
+        width: 35px !important;
+    }
+
+    .images-new-home img:first-child {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1/5;
+        width: 100% !important;
+        height: 75px;
+    }
+
+    .users-new-home {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .users-new-home .col-4.mb-4 {
+        max-width: 100% !important;
+    }
+
+    .flags-new-home {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 10px;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .flags-new-home .col-2 {
+        display: flex !important;
+        justify-content: center;
+        max-width: unset !important;
+    }
+
+    .flags-new-home img {
+        width: 40px;
+        height: 40px;
+        border: none !important;
+    }
+
+    .flags-new-home p {
+        margin-top: 0 !important;
+    }
+
+    .row.extra-margin-imp.mobile-m-0 {
+        margin-bottom: 10px;
+    }
+
+    .extra-margin-imp .col-6 {
+        justify-content: space-between !important;
+    }
+
+    .row.extra-margin-imp {
+        margin-top: 20px !important;
+    }
+
+    .col-12.blue-banner.fun-fact {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .recommend-new-home {
+        padding: 30px 0 30px 0 !important;
+        margin: 0 !important;
+    }
+
+    .candidates-new-home {
+        padding-bottom: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .post-job-btn-new-home {
+        padding-bottom: 0 !important;
+        margin: 0 !important;
+    }
+
+    .why-gohirenow-new-home {
+        background-image: none;
+    }
+
+    .round-icons-new-home img {
+        border-radius: unset !important;
+    }
+
+    .average-title-new-home {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .fun-fact-row {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .fun-fact-row p {
+        background-color: #29aae3;
+        padding-top: 0 !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .blue-banner.fun-fact {
+        width: 90vw;
+    }
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0') format('embedded-opentype'), url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url(https://dev.gohirenow.com/fonts/bfc84fcb6a1c571b2b96ae83833e6de1.OTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url(https://dev.gohirenow.com/fonts/d75d7f70aa160104a45a743eae7a8a7e.OTF);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(https://dev.gohirenow.com/fonts/1025a6e0fb0fa86f17f57cc82a6b9756.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(https://dev.gohirenow.com/fonts/3ed9575dcc488c3e3a5bd66620bdf5a4.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(https://dev.gohirenow.com/fonts/85d339d916479f729938d2911b85bf1f.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(https://dev.gohirenow.com/fonts/e631d2735799aa943d93d301abf423d2.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(https://dev.gohirenow.com/fonts/2d36b1a925432bae7f3c53a340868c6e.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(https://dev.gohirenow.com/fonts/2fe27d9d10cdfccb1baef28a45d5ba90.ttf);
+    font-weight: 300;
+}
